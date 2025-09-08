@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 echo "==> Устанавливаем Xorg, Openbox и прочее..."
 sudo apt install -y \
-  xorg openbox xinit unclutter florence chromium-browser nano
+  xorg openbox xinit unclutter chromium-browser nano
 
 echo "==> Создаём директории конфигурации..."
 sudo -u $USER_NAME mkdir -p /home/$USER_NAME/.config/openbox
@@ -23,7 +23,7 @@ cat << 'EOF' | sudo -u $USER_NAME tee /home/$USER_NAME/.config/openbox/autostart
 unclutter -idle 0 &
 
 # Запуск экранной клавиатуры с авто-показом
-florence --no-panel --auto-show &
+# florence --no-panel --auto-show &
 
 # Настройки энергосбережения X
 xset -dpms
