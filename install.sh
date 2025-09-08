@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 echo "==> Устанавливаем Xorg, Openbox и прочее..."
 sudo apt install -y \
-  xorg openbox xinit unclutter florence chromium-browser
+  xorg openbox xinit unclutter florence chromium-browser nano
 
 echo "==> Создаём директории конфигурации..."
 sudo -u $USER_NAME mkdir -p /home/$USER_NAME/.config/openbox
