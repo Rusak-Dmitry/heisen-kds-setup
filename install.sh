@@ -50,4 +50,5 @@ ExecStart=-/sbin/agetty --autologin $USER_NAME --noclear %I \$TERM
 EOF
 
 echo "==> Готово!"
-echo "Перезагрузите систему командой: sudo reboot"
+echo "✅ Установка завершена. Перезагружаем систему..."
+sudo reboot
